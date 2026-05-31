@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.martindoudera.cashreader.setting.MyPreferenceCategory android:title="@string/settings_section_recognition">
+        <Preference android:icon="@drawable/cash_multiple" android:persistent="false" android:title="@string/settings_changecurrency_button" android:key="@string/pref_key_currency" android:summary="@string/settings_changecurrency_info" />
+        <Preference android:icon="@drawable/currency_convert" android:persistent="false" android:title="@string/conversions_title" android:key="@string/pref_key_conversion_settings" android:summary="@string/conversions_subtitle">
+            <intent android:targetPackage="com.martindoudera.cashreader" android:action="android.intent.action.VIEW" android:targetClass="com.martindoudera.cashreader.setting.conversion.SettingsConversionActivity" />
+        </Preference>
+        <Preference android:icon="@drawable/credit_card" android:persistent="false" android:title="@string/settings_managesubscription_title_general" android:key="@string/pref_key_full_version">
+            <intent android:targetPackage="com.martindoudera.cashreader" android:action="android.intent.action.VIEW" android:targetClass="com.martindoudera.cashreader.subscription.SubscriptionActivity" />
+        </Preference>
+        <Preference android:icon="@drawable/vibrate" android:persistent="false" android:title="@string/vibrations_title" android:key="@string/pref_key_vibrate_settings">
+            <intent android:targetPackage="com.martindoudera.cashreader" android:action="android.intent.action.VIEW" android:targetClass="com.martindoudera.cashreader.setting.vibration.SettingsVibrationActivity" />
+        </Preference>
+        <ListPreference android:icon="@drawable/account_voice" android:entries="@array/read_currency_mode" android:title="@string/settings_currency_style_title" android:key="@string/pref_key_read_currency_style" android:summary="@string/settings_currency_style_info" android:defaultValue="@string/pref_value_read_currency_all_at_once" android:entryValues="@array/read_currency_mode_value" app:useSimpleSummaryProvider="true" />
+        <Preference android:icon="@drawable/account_voice" android:persistent="false" android:title="@string/settings_tts_voice_title" android:key="@string/pref_key_tts_voice" android:summary="@string/settings_tts_voice_summary">
+            <intent android:action="com.android.settings.TTS_SETTINGS" />
+        </Preference>
+        <CheckBoxPreference android:icon="@drawable/volume_high" android:title="@string/settings_periodicsound_cell_hint" android:key="@string/pref_key_beep" android:summary="@string/settings_periodicsound_info" android:defaultValue="true" />
+        <CheckBoxPreference android:icon="@drawable/flashlight" android:title="@string/settings_torch_cell_hint" android:key="@string/pref_key_torch" android:summary="@string/settings_torch_info" android:defaultValue="true" />
+        <ListPreference android:icon="@drawable/camera" android:entries="@array/camera_facing" android:title="@string/settings_togglecamera_title" android:key="@string/pref_key_toggle_camera" android:defaultValue="@string/pref_value_toggle_camera_rear" android:entryValues="@array/camera_facing_values" app:useSimpleSummaryProvider="true" />
+        <Preference android:icon="@drawable/language" android:persistent="false" android:title="@string/settings_change_language_title" android:key="@string/pref_key_language_settings" android:summary="@string/settings_change_language_message" />
+        <CheckBoxPreference android:icon="@drawable/picture" android:title="@string/settings_sendphoto_cell_hint" android:key="@string/pref_photo_inspection" android:summary="@string/settings_sendphoto_info" android:defaultValue="false" app:isPreferenceVisible="false" />
+    </com.martindoudera.cashreader.setting.MyPreferenceCategory>
+    <com.martindoudera.cashreader.setting.MyPreferenceCategory android:title="@string/settings_section_support" app:isPreferenceVisible="false">
+        <Preference android:icon="@drawable/share_variant" android:persistent="false" android:title="@string/settings_sharelink_title" android:key="@string/pref_key_send_link" android:summary="@string/settings_sharelink_info" app:isPreferenceVisible="false" />
+        <Preference android:icon="@drawable/email" android:persistent="false" android:title="@string/settings_writeus_button" android:key="@string/pref_key_contact_us" android:summary="@string/settings_writeus_info" app:isPreferenceVisible="false" />
+        <Preference android:icon="@drawable/star" android:persistent="false" android:title="@string/settings_writereview_cell_title" android:summary="@string/settings_writereview_info" app:isPreferenceVisible="false">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/google_play_url" />
+        </Preference>
+        <Preference android:icon="@drawable/lock" android:persistent="false" android:title="@string/terms_privacy_title" app:isPreferenceVisible="false">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/url_privacy_policy" />
+        </Preference>
+        <Preference android:icon="@drawable/assignment" android:persistent="false" android:title="@string/terms_use_title" app:isPreferenceVisible="false">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/url_terms_of_use" />
+        </Preference>
+        <Preference android:icon="@drawable/information_outline" android:persistent="false" android:title="@string/settings_app_version" android:key="@string/pref_key_version" android:summary="@string/app_version_name" app:isPreferenceVisible="false" />
+    </com.martindoudera.cashreader.setting.MyPreferenceCategory>
+    <com.martindoudera.cashreader.setting.MyPreferenceCategory android:title="@string/settings_socialmedia_title" app:isPreferenceVisible="false">
+        <Preference android:icon="@drawable/facebook" android:persistent="false" android:title="@string/settings_socialmedia_button_facebook" android:key="@string/pref_key_facebook" app:isPreferenceVisible="false" />
+        <Preference android:icon="@drawable/twitter" android:persistent="false" android:title="@string/settings_socialmedia_button_twitter" android:key="@string/pref_key_twitter" app:isPreferenceVisible="false" />
+    </com.martindoudera.cashreader.setting.MyPreferenceCategory>
+</PreferenceScreen>

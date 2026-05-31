@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" layout="@layout/toolbar" />
+    <LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/onboarding_changecurrency_instructions" style="@style/Widget.Text.Body" />
+        </ScrollView>
+        <Button android:id="@id/buttonChooseLocalizedCurrency" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <Button android:id="@id/buttonChooseFromList" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/onboarding_action_choosecurrency" />
+    </LinearLayout>
+</LinearLayout>

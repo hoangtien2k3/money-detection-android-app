@@ -1,0 +1,76 @@
+// NOTE: This module is decompiled code intended for READING/NAVIGATION in
+// Android Studio. It will NOT compile cleanly — decompiled Java has many
+// errors, missing types, and obfuscated identifiers. The 'sourceSets' below
+// is configured so Android Studio indexes files for navigation; do not run
+// `./gradlew assembleDebug`.
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.martindoudera.cashreader'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.martindoudera.cashreader.decompiled"
+        minSdk 21
+        targetSdk 35
+        versionCode 210023100
+        versionName "2.31.0-decompiled"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    // Exclude smali folders from compilation (these are only for reference)
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/main/assets']
+            jniLibs.srcDirs = ['src/main/jniLibs']
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+        }
+    }
+
+    // Allow the project to "configure" even with many decompiled errors.
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    // The decompiled APK was built with these (approximate) dependencies.
+    // Included so Android Studio can resolve more imports during navigation.
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.activity:activity-ktx:1.9.2'
+    implementation 'androidx.fragment:fragment-ktx:1.8.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.preference:preference-ktx:1.2.1'
+    implementation 'androidx.datastore:datastore-preferences:1.1.1'
+    implementation 'androidx.camera:camera-core:1.3.4'
+    implementation 'androidx.camera:camera-camera2:1.3.4'
+    implementation 'androidx.camera:camera-lifecycle:1.3.4'
+    implementation 'androidx.camera:camera-view:1.3.4'
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'com.google.dagger:dagger:2.51.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1'
+}

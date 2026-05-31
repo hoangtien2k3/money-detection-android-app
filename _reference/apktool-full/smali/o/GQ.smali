@@ -1,0 +1,134 @@
+.class public final Lo/GQ;
+.super Ljava/lang/Object;
+.source "r8-map-id-40d59183bd07d68ef2d4bf0775267fedf46c31b905f5ae28226702cf5c6f4176"
+
+# interfaces
+.implements Ljava/security/PrivilegedExceptionAction;
+
+
+# direct methods
+.method public static else()Lsun/misc/Unsafe;
+    .locals 10
+
+    .line 1
+    const-class v0, Lsun/misc/Unsafe;
+
+    const-string v9, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
+
+    .line 6
+    move-result-object v7
+
+    move-object v1, v7
+
+    .line 7
+    array-length v2, v1
+
+    const/4 v9, 0x1
+
+    .line 8
+    const/4 v7, 0x0
+
+    move v3, v7
+
+    .line 9
+    :goto_0
+    const/4 v7, 0x0
+
+    move v4, v7
+
+    .line 10
+    if-ge v3, v2, :cond_1
+
+    const/4 v8, 0x6
+
+    .line 12
+    aget-object v5, v1, v3
+
+    const/4 v8, 0x5
+
+    .line 14
+    const/4 v7, 0x1
+
+    move v6, v7
+
+    .line 15
+    invoke-virtual {v5, v6}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+
+    const/4 v8, 0x7
+
+    .line 18
+    invoke-virtual {v5, v4}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 21
+    move-result-object v7
+
+    move-object v4, v7
+
+    .line 22
+    invoke-virtual {v0, v4}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+
+    .line 25
+    move-result v7
+
+    move v5, v7
+
+    .line 26
+    if-eqz v5, :cond_0
+
+    const/4 v8, 0x1
+
+    .line 28
+    invoke-virtual {v0, v4}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 31
+    move-result-object v7
+
+    move-object v0, v7
+
+    .line 32
+    check-cast v0, Lsun/misc/Unsafe;
+
+    const/4 v8, 0x1
+
+    .line 34
+    return-object v0
+
+    .line 35
+    :cond_0
+    const/4 v8, 0x3
+
+    add-int/lit8 v3, v3, 0x1
+
+    const/4 v8, 0x6
+
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :cond_1
+    const/4 v8, 0x2
+
+    return-object v4
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic run()Ljava/lang/Object;
+    .locals 5
+
+    move-object v1, p0
+
+    .line 1
+    invoke-static {}, Lo/GQ;->else()Lsun/misc/Unsafe;
+
+    .line 4
+    move-result-object v3
+
+    move-object v0, v3
+
+    .line 5
+    return-object v0
+.end method

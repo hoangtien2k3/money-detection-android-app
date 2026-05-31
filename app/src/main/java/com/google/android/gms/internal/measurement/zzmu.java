@@ -1,0 +1,9 @@
+package com.google.android.gms.internal.measurement;
+
+/* JADX INFO: compiled from: r8-map-id-40d59183bd07d68ef2d4bf0775267fedf46c31b905f5ae28226702cf5c6f4176 */
+/* JADX INFO: loaded from: classes.dex */
+enum zzmu extends zzmn {
+    private zzmu(String str, int i, zzmx zzmxVar, int i2) {
+        super(str, 10, zzmxVar, 2);
+    }
+}

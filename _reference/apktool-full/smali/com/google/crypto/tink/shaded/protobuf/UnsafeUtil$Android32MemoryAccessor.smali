@@ -1,0 +1,402 @@
+.class final Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$Android32MemoryAccessor;
+.super Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;
+.source "r8-map-id-40d59183bd07d68ef2d4bf0775267fedf46c31b905f5ae28226702cf5c6f4176"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Android32MemoryAccessor"
+.end annotation
+
+
+# virtual methods
+.method public final case(JLjava/lang/Object;)D
+    .locals 3
+
+    move-object v0, p0
+
+    .line 1
+    invoke-virtual {v0, p1, p2, p3}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->public(JLjava/lang/Object;)J
+
+    .line 4
+    move-result-wide p1
+
+    .line 5
+    invoke-static {p1, p2}, Ljava/lang/Double;->longBitsToDouble(J)D
+
+    .line 8
+    move-result-wide p1
+
+    .line 9
+    return-wide p1
+.end method
+
+.method public final continue(JLjava/lang/Object;)B
+    .locals 4
+
+    move-object v1, p0
+
+    .line 1
+    sget-boolean v0, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->goto:Z
+
+    .line 3
+    if-eqz v0, :cond_0
+
+    const-string v3, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    .line 5
+    invoke-static {p1, p2, p3}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->continue(JLjava/lang/Object;)B
+
+    .line 8
+    move-result v3
+
+    move p1, v3
+
+    .line 9
+    return p1
+
+    .line 10
+    :cond_0
+    const/4 v3, 0x2
+
+    invoke-static {p1, p2, p3}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->case(JLjava/lang/Object;)B
+
+    .line 13
+    move-result v3
+
+    move p1, v3
+
+    .line 14
+    return p1
+.end method
+
+.method public final default(J[BJJ)V
+    .locals 4
+
+    move-object v0, p0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const/4 v2, 0x2
+
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    const/4 v2, 0x2
+
+    .line 6
+    throw p1
+
+    const/4 v3, 0x1
+.end method
+
+.method public final extends(BJ)V
+    .locals 4
+
+    move-object v0, p0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const/4 v3, 0x1
+
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    const/4 v2, 0x1
+
+    .line 6
+    throw p1
+
+    const/4 v2, 0x4
+.end method
+
+.method public final final(Ljava/lang/Object;JB)V
+    .locals 5
+
+    move-object v1, p0
+
+    .line 1
+    sget-boolean v0, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->goto:Z
+
+    .line 3
+    if-eqz v0, :cond_0
+
+    const/4 v3, 0x2
+
+    .line 5
+    invoke-static {p1, p2, p3, p4}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->public(Ljava/lang/Object;JB)V
+
+    const/4 v3, 0x1
+
+    .line 8
+    return-void
+
+    .line 9
+    :cond_0
+    const/4 v4, 0x5
+
+    invoke-static {p1, p2, p3, p4}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->return(Ljava/lang/Object;JB)V
+
+    const/4 v3, 0x2
+
+    .line 12
+    return-void
+.end method
+
+.method public final goto(JLjava/lang/Object;)F
+    .locals 4
+
+    move-object v0, p0
+
+    .line 1
+    invoke-virtual {v0, p1, p2, p3}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->break(JLjava/lang/Object;)I
+
+    .line 4
+    move-result v3
+
+    move p1, v3
+
+    .line 5
+    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    .line 8
+    move-result v2
+
+    move p1, v2
+
+    .line 9
+    return p1
+.end method
+
+.method public final implements(Ljava/lang/Object;JZ)V
+    .locals 5
+
+    move-object v1, p0
+
+    .line 1
+    sget-boolean v0, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->goto:Z
+
+    .line 3
+    if-eqz v0, :cond_0
+
+    const/4 v4, 0x1
+
+    .line 5
+    int-to-byte p4, p4
+
+    const/4 v4, 0x1
+
+    .line 6
+    invoke-static {p1, p2, p3, p4}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->public(Ljava/lang/Object;JB)V
+
+    const/4 v3, 0x5
+
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    const/4 v3, 0x2
+
+    int-to-byte p4, p4
+
+    const/4 v3, 0x2
+
+    .line 11
+    invoke-static {p1, p2, p3, p4}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->return(Ljava/lang/Object;JB)V
+
+    const/4 v3, 0x2
+
+    .line 14
+    return-void
+.end method
+
+.method public final instanceof([BJJJ)V
+    .locals 4
+
+    move-object v0, p0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const/4 v2, 0x5
+
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    const/4 v3, 0x3
+
+    .line 6
+    throw p1
+
+    const/4 v3, 0x1
+.end method
+
+.method public final package(JLjava/lang/Object;)Z
+    .locals 7
+
+    move-object v3, p0
+
+    .line 1
+    sget-boolean v0, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->goto:Z
+
+    .line 3
+    const/4 v5, 0x0
+
+    move v1, v5
+
+    .line 4
+    const/4 v6, 0x1
+
+    move v2, v6
+
+    .line 5
+    if-eqz v0, :cond_1
+
+    const/4 v6, 0x7
+
+    .line 7
+    invoke-static {p1, p2, p3}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->continue(JLjava/lang/Object;)B
+
+    .line 10
+    move-result v6
+
+    move p1, v6
+
+    .line 11
+    if-eqz p1, :cond_0
+
+    const/4 v6, 0x6
+
+    .line 13
+    return v2
+
+    .line 14
+    :cond_0
+    const/4 v6, 0x4
+
+    return v1
+
+    .line 15
+    :cond_1
+    const/4 v6, 0x7
+
+    invoke-static {p1, p2, p3}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil;->case(JLjava/lang/Object;)B
+
+    .line 18
+    move-result v6
+
+    move p1, v6
+
+    .line 19
+    if-eqz p1, :cond_2
+
+    const/4 v6, 0x3
+
+    .line 21
+    return v2
+
+    .line 22
+    :cond_2
+    const/4 v5, 0x3
+
+    return v1
+.end method
+
+.method public final protected(J)B
+    .locals 3
+
+    move-object v0, p0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const/4 v2, 0x2
+
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    const/4 v2, 0x7
+
+    .line 6
+    throw p1
+
+    const/4 v2, 0x1
+.end method
+
+.method public final this(Ljava/lang/Object;JF)V
+    .locals 3
+
+    move-object v0, p0
+
+    .line 1
+    invoke-static {p4}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 4
+    move-result v2
+
+    move p4, v2
+
+    .line 5
+    invoke-virtual {v0, p4, p2, p3, p1}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->interface(IJLjava/lang/Object;)V
+
+    const/4 v2, 0x3
+
+    .line 8
+    return-void
+.end method
+
+.method public final throws(J)J
+    .locals 4
+
+    move-object v0, p0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const/4 v2, 0x6
+
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    const/4 v2, 0x3
+
+    .line 6
+    throw p1
+
+    const/4 v3, 0x5
+.end method
+
+.method public final while(Ljava/lang/Object;JD)V
+    .locals 10
+
+    .line 1
+    invoke-static {p4, p5}, Ljava/lang/Double;->doubleToLongBits(D)J
+
+    .line 4
+    move-result-wide v4
+
+    .line 5
+    move-object v0, p0
+
+    .line 6
+    move-object v1, p1
+
+    .line 7
+    move-wide v2, p2
+
+    .line 8
+    invoke-virtual/range {v0 .. v5}, Lcom/google/crypto/tink/shaded/protobuf/UnsafeUtil$MemoryAccessor;->class(Ljava/lang/Object;JJ)V
+
+    const/4 v7, 0x4
+
+    .line 11
+    return-void
+.end method

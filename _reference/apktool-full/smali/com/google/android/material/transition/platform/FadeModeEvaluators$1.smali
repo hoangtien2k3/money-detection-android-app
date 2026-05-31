@@ -1,0 +1,77 @@
+.class final Lcom/google/android/material/transition/platform/FadeModeEvaluators$1;
+.super Ljava/lang/Object;
+.source "r8-map-id-40d59183bd07d68ef2d4bf0775267fedf46c31b905f5ae28226702cf5c6f4176"
+
+# interfaces
+.implements Lcom/google/android/material/transition/platform/FadeModeEvaluator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/material/transition/platform/FadeModeEvaluators;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = null
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 4
+
+    move-object v0, p0
+
+    .line 1
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    const-string v3, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final else(FFF)Lcom/google/android/material/transition/platform/FadeModeResult;
+    .locals 6
+
+    move-object v2, p0
+
+    .line 1
+    const/4 v5, 0x0
+
+    move v0, v5
+
+    .line 2
+    const/16 v5, 0xff
+
+    move v1, v5
+
+    .line 4
+    invoke-static {v0, v1, p2, p3, p1}, Lcom/google/android/material/transition/platform/TransitionUtils;->instanceof(IIFFF)I
+
+    .line 7
+    move-result v4
+
+    move p1, v4
+
+    .line 8
+    new-instance p2, Lcom/google/android/material/transition/platform/FadeModeResult;
+
+    const/4 v4, 0x6
+
+    .line 10
+    const/4 v4, 0x1
+
+    move p3, v4
+
+    .line 11
+    invoke-direct {p2, v1, p1, p3}, Lcom/google/android/material/transition/platform/FadeModeResult;-><init>(IIZ)V
+
+    const/4 v5, 0x3
+
+    .line 14
+    return-object p2
+.end method

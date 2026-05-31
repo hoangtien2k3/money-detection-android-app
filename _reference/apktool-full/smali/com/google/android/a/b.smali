@@ -1,0 +1,126 @@
+.class public Lcom/google/android/a/b;
+.super Landroid/os/Binder;
+.source "r8-map-id-40d59183bd07d68ef2d4bf0775267fedf46c31b905f5ae28226702cf5c6f4176"
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 4
+
+    move-object v1, p0
+
+    .line 1
+    invoke-direct {v1}, Landroid/os/Binder;-><init>()V
+
+    const-string v3, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    .line 4
+    const-string v3, "com.google.android.finsky.externalreferrer.IGetInstallReferrerService"
+
+    move-object v0, v3
+
+    .line 6
+    invoke-virtual {v1, v1, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+
+    const/4 v3, 0x5
+
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final asBinder()Landroid/os/IBinder;
+    .locals 4
+
+    move-object v0, p0
+
+    .line 1
+    return-object v0
+.end method
+
+.method public final onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    .locals 4
+
+    move-object v1, p0
+
+    .line 1
+    const v0, 0xffffff
+
+    const/4 v3, 0x6
+
+    .line 4
+    if-le p1, v0, :cond_0
+
+    const/4 v3, 0x4
+
+    .line 6
+    invoke-super {v1, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
+    .line 9
+    move-result v3
+
+    move p4, v3
+
+    .line 10
+    if-eqz p4, :cond_1
+
+    const/4 v3, 0x3
+
+    .line 12
+    const/4 v3, 0x1
+
+    move p1, v3
+
+    .line 13
+    return p1
+
+    .line 14
+    :cond_0
+    const/4 v3, 0x4
+
+    invoke-virtual {v1}, Landroid/os/Binder;->getInterfaceDescriptor()Ljava/lang/String;
+
+    .line 17
+    move-result-object v3
+
+    move-object p4, v3
+
+    .line 18
+    invoke-virtual {p2, p4}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    const/4 v3, 0x3
+
+    .line 21
+    :cond_1
+    const/4 v3, 0x1
+
+    invoke-virtual {v1, p1, p2, p3}, Lcom/google/android/a/b;->strictfp(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+
+    .line 24
+    move-result v3
+
+    move p1, v3
+
+    .line 25
+    return p1
+.end method
+
+.method public strictfp(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 4
+
+    move-object v0, p0
+
+    .line 1
+    const/4 v3, 0x0
+
+    move p1, v3
+
+    .line 2
+    throw p1
+
+    const/4 v3, 0x4
+.end method

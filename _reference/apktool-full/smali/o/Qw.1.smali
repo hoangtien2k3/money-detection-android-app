@@ -1,0 +1,193 @@
+.class public final Lo/Qw;
+.super Ljava/lang/Object;
+.source "r8-map-id-40d59183bd07d68ef2d4bf0775267fedf46c31b905f5ae28226702cf5c6f4176"
+
+# interfaces
+.implements Lo/ty;
+
+
+# instance fields
+.field public else:[Lo/ty;
+
+
+# virtual methods
+.method public final abstract(Ljava/lang/Class;)Z
+    .locals 9
+
+    move-object v5, p0
+
+    .line 1
+    iget-object v0, v5, Lo/Qw;->else:[Lo/ty;
+
+    const-string v8, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    .line 3
+    array-length v1, v0
+
+    const/4 v7, 0x6
+
+    .line 4
+    const/4 v7, 0x0
+
+    move v2, v7
+
+    .line 5
+    const/4 v7, 0x0
+
+    move v3, v7
+
+    .line 6
+    :goto_0
+    if-ge v3, v1, :cond_1
+
+    const/4 v8, 0x4
+
+    .line 8
+    aget-object v4, v0, v3
+
+    const/4 v7, 0x1
+
+    .line 10
+    invoke-interface {v4, p1}, Lo/ty;->abstract(Ljava/lang/Class;)Z
+
+    .line 13
+    move-result v8
+
+    move v4, v8
+
+    .line 14
+    if-eqz v4, :cond_0
+
+    const/4 v7, 0x3
+
+    .line 16
+    const/4 v7, 0x1
+
+    move p1, v7
+
+    .line 17
+    return p1
+
+    .line 18
+    :cond_0
+    const/4 v7, 0x2
+
+    add-int/lit8 v3, v3, 0x1
+
+    const/4 v8, 0x5
+
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_1
+    const/4 v7, 0x4
+
+    return v2
+.end method
+
+.method public final else(Ljava/lang/Class;)Lo/dG;
+    .locals 9
+
+    move-object v5, p0
+
+    .line 1
+    iget-object v0, v5, Lo/Qw;->else:[Lo/ty;
+
+    const/4 v7, 0x3
+
+    .line 3
+    array-length v1, v0
+
+    const/4 v8, 0x4
+
+    .line 4
+    const/4 v7, 0x0
+
+    move v2, v7
+
+    .line 5
+    :goto_0
+    if-ge v2, v1, :cond_1
+
+    const/4 v7, 0x6
+
+    .line 7
+    aget-object v3, v0, v2
+
+    const/4 v8, 0x5
+
+    .line 9
+    invoke-interface {v3, p1}, Lo/ty;->abstract(Ljava/lang/Class;)Z
+
+    .line 12
+    move-result v8
+
+    move v4, v8
+
+    .line 13
+    if-eqz v4, :cond_0
+
+    const/4 v7, 0x1
+
+    .line 15
+    invoke-interface {v3, p1}, Lo/ty;->else(Ljava/lang/Class;)Lo/dG;
+
+    .line 18
+    move-result-object v8
+
+    move-object p1, v8
+
+    .line 19
+    return-object p1
+
+    .line 20
+    :cond_0
+    const/4 v7, 0x6
+
+    add-int/lit8 v2, v2, 0x1
+
+    const/4 v8, 0x2
+
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :cond_1
+    const/4 v7, 0x1
+
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    const/4 v7, 0x2
+
+    .line 25
+    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 28
+    move-result-object v8
+
+    move-object p1, v8
+
+    .line 29
+    const-string v8, "No factory is available for message type: "
+
+    move-object v1, v8
+
+    .line 31
+    invoke-virtual {v1, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 34
+    move-result-object v7
+
+    move-object p1, v7
+
+    .line 35
+    invoke-direct {v0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    const/4 v7, 0x4
+
+    .line 38
+    throw v0
+
+    const/4 v7, 0x2
+.end method

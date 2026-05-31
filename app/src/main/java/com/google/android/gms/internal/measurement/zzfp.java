@@ -1,0 +1,44 @@
+package com.google.android.gms.internal.measurement;
+
+import com.google.android.gms.internal.measurement.zzjk;
+
+/* JADX INFO: compiled from: r8-map-id-40d59183bd07d68ef2d4bf0775267fedf46c31b905f5ae28226702cf5c6f4176 */
+/* JADX INFO: loaded from: classes.dex */
+final /* synthetic */ class zzfp {
+
+    /* JADX INFO: renamed from: else, reason: not valid java name */
+    public static final /* synthetic */ int[] f4788else;
+
+    static {
+        int[] iArr = new int[((int[]) zzjk.zze.f4908else.clone()).length];
+        f4788else = iArr;
+        try {
+            iArr[3] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            f4788else[4] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            f4788else[2] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        try {
+            f4788else[5] = 4;
+        } catch (NoSuchFieldError unused4) {
+        }
+        try {
+            f4788else[6] = 5;
+        } catch (NoSuchFieldError unused5) {
+        }
+        try {
+            f4788else[0] = 6;
+        } catch (NoSuchFieldError unused6) {
+        }
+        try {
+            f4788else[1] = 7;
+        } catch (NoSuchFieldError unused7) {
+        }
+    }
+}

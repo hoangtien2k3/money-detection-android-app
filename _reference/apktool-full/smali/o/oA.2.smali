@@ -1,0 +1,39 @@
+.class public abstract Lo/oA;
+.super Ljava/lang/Object;
+.source "r8-map-id-40d59183bd07d68ef2d4bf0775267fedf46c31b905f5ae28226702cf5c6f4176"
+
+
+# direct methods
+.method public static abstract(Landroid/app/Notification$Builder;I)Landroid/app/Notification$Builder;
+    .locals 4
+
+    move-object v0, p0
+
+    .line 1
+    invoke-virtual {v0, p1}, Landroid/app/Notification$Builder;->setForegroundServiceBehavior(I)Landroid/app/Notification$Builder;
+
+    .line 4
+    move-result-object v2
+
+    move-object v0, v2
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static else(Landroid/app/Notification$Action$Builder;Z)Landroid/app/Notification$Action$Builder;
+    .locals 4
+
+    move-object v0, p0
+
+    .line 1
+    invoke-virtual {v0, p1}, Landroid/app/Notification$Action$Builder;->setAuthenticationRequired(Z)Landroid/app/Notification$Action$Builder;
+
+    .line 4
+    move-result-object v3
+
+    move-object v0, v3
+
+    .line 5
+    return-object v0
+.end method

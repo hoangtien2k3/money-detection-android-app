@@ -1,0 +1,26 @@
+.class final Lcom/google/common/graph/MapRetrievalCache;
+.super Lcom/google/common/graph/MapIteratorCache;
+.source "r8-map-id-40d59183bd07d68ef2d4bf0775267fedf46c31b905f5ae28226702cf5c6f4176"
+
+
+# annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/common/graph/MapRetrievalCache$CacheEntry;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lcom/google/common/graph/MapIteratorCache<",
+        "TK;TV;>;"
+    }
+.end annotation

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" layout="@layout/toolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/scrollContainer" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/textGeneral" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" style="@style/Widget.Text.Body" />
+            <Button android:id="@id/buttonSubscribeChange" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_managesubscription_changesubscription" />
+            <LinearLayout android:orientation="vertical" android:id="@id/containerSubscription" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/purchase_main_info" style="@style/Widget.Text.Body" />
+                <View android:background="@color/primary" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="10.0dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/purchase_autorenew_section_title" style="@style/Widget.Text.Heading2" />
+                <TextView android:textSize="@dimen/default_text_size" android:id="@id/textSubscriptionDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/purchase_subscription_autorenew_info" style="@style/Widget.Text.Body" />
+                <TextView android:textSize="@dimen/default_text_size" android:id="@id/textSubscriptionPaymentDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" style="@style/Widget.Text.Body" />
+                <Button android:id="@id/buttonSubscribeMonth" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <Button android:id="@id/buttonSubscribeYear" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/purchase_monthly_button" />
+                <TextView android:textStyle="bold" android:layout_gravity="center" android:id="@id/yearlyDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" style="@style/Widget.Text.Description" />
+                <View android:background="@color/primary" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="10.0dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/containerLifetime" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:text="@string/purchase_lifetime_section_title" android:layout_marginVertical="16.0dp" style="@style/Widget.Text.Heading2" />
+                <TextView android:textSize="@dimen/default_text_size" android:id="@id/textLifetime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/purchase_info_lifetime" style="@style/Widget.Text.Body" />
+                <Button android:id="@id/buttonBuyLifetime" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/primary" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="10.0dp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/code_renewal_title" style="@style/Widget.Text.Heading2" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/code_renewal_message" style="@style/Widget.Text.Body" />
+            <Button android:id="@id/buttonCodeRenew" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/code_screen_button" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

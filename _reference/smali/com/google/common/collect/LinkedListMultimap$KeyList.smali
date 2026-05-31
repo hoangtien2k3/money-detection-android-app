@@ -1,0 +1,84 @@
+.class Lcom/google/common/collect/LinkedListMultimap$KeyList;
+.super Ljava/lang/Object;
+.source "r8-map-id-40d59183bd07d68ef2d4bf0775267fedf46c31b905f5ae28226702cf5c6f4176"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/common/collect/LinkedListMultimap;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "KeyList"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field public abstract:Lcom/google/common/collect/LinkedListMultimap$Node;
+
+.field public default:I
+
+.field public else:Lcom/google/common/collect/LinkedListMultimap$Node;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/common/collect/LinkedListMultimap$Node;)V
+    .locals 4
+
+    move-object v1, p0
+
+    .line 1
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    const-string v3, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    .line 4
+    iput-object p1, v1, Lcom/google/common/collect/LinkedListMultimap$KeyList;->else:Lcom/google/common/collect/LinkedListMultimap$Node;
+
+    const/4 v3, 0x7
+
+    .line 6
+    iput-object p1, v1, Lcom/google/common/collect/LinkedListMultimap$KeyList;->abstract:Lcom/google/common/collect/LinkedListMultimap$Node;
+
+    const/4 v3, 0x7
+
+    .line 8
+    const/4 v3, 0x0
+
+    move v0, v3
+
+    .line 9
+    iput-object v0, p1, Lcom/google/common/collect/LinkedListMultimap$Node;->throw:Lcom/google/common/collect/LinkedListMultimap$Node;
+
+    const/4 v3, 0x1
+
+    .line 11
+    iput-object v0, p1, Lcom/google/common/collect/LinkedListMultimap$Node;->volatile:Lcom/google/common/collect/LinkedListMultimap$Node;
+
+    const/4 v3, 0x6
+
+    .line 13
+    const/4 v3, 0x1
+
+    move p1, v3
+
+    .line 14
+    iput p1, v1, Lcom/google/common/collect/LinkedListMultimap$KeyList;->default:I
+
+    const/4 v3, 0x6
+
+    .line 16
+    return-void
+.end method

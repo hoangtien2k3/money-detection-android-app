@@ -1,0 +1,116 @@
+package p006o;
+
+import java.io.Serializable;
+import java.math.BigInteger;
+import java.util.regex.Pattern;
+
+/* JADX INFO: renamed from: o.hg */
+/* JADX INFO: compiled from: r8-map-id-40d59183bd07d68ef2d4bf0775267fedf46c31b905f5ae28226702cf5c6f4176 */
+/* JADX INFO: loaded from: classes.dex */
+public final class C3518hg implements Comparable, Serializable {
+
+    /* JADX INFO: renamed from: default, reason: not valid java name */
+    public static final C3518hg f17830default = new C3518hg(0, 0);
+
+    /* JADX INFO: renamed from: abstract, reason: not valid java name */
+    public final int f17831abstract;
+
+    /* JADX INFO: renamed from: else, reason: not valid java name */
+    public final long f17832else;
+
+    static {
+        BigInteger.valueOf(1000000000L);
+        Pattern.compile("([-+]?)P(?:([-+]?[0-9]+)D)?(T(?:([-+]?[0-9]+)H)?(?:([-+]?[0-9]+)M)?(?:([-+]?[0-9]+)(?:[.,]([0-9]{0,9}))?S)?)?", 2);
+    }
+
+    public C3518hg(long j, int i) {
+        this.f17832else = j;
+        this.f17831abstract = i;
+    }
+
+    /* JADX INFO: renamed from: package, reason: not valid java name */
+    public static C3518hg m12433package(long j, int i) {
+        return (((long) i) | j) == 0 ? f17830default : new C3518hg(j, i);
+    }
+
+    /* JADX INFO: renamed from: protected, reason: not valid java name */
+    public static C3518hg m12434protected(long j) {
+        long j2 = j / 1000000000;
+        int i = (int) (j % 1000000000);
+        if (i < 0) {
+            i += 1000000000;
+            j2--;
+        }
+        return m12433package(j2, i);
+    }
+
+    @Override // java.lang.Comparable
+    public final int compareTo(Object obj) {
+        C3518hg c3518hg = (C3518hg) obj;
+        int iM11904implements = AbstractC3140bQ.m11904implements(this.f17832else, c3518hg.f17832else);
+        return iM11904implements != 0 ? iM11904implements : this.f17831abstract - c3518hg.f17831abstract;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof C3518hg) {
+            C3518hg c3518hg = (C3518hg) obj;
+            if (this.f17832else == c3518hg.f17832else && this.f17831abstract == c3518hg.f17831abstract) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        long j = this.f17832else;
+        return (this.f17831abstract * 51) + ((int) (j ^ (j >>> 32)));
+    }
+
+    public final String toString() {
+        if (this == f17830default) {
+            return "PT0S";
+        }
+        long j = this.f17832else;
+        long j2 = j / 3600;
+        int i = (int) ((j % 3600) / 60);
+        int i2 = (int) (j % 60);
+        StringBuilder sb = new StringBuilder(24);
+        sb.append("PT");
+        if (j2 != 0) {
+            sb.append(j2);
+            sb.append('H');
+        }
+        if (i != 0) {
+            sb.append(i);
+            sb.append('M');
+        }
+        int i3 = this.f17831abstract;
+        if (i2 == 0 && i3 == 0 && sb.length() > 2) {
+            return sb.toString();
+        }
+        if (i2 >= 0 || i3 <= 0) {
+            sb.append(i2);
+        } else if (i2 == -1) {
+            sb.append("-0");
+        } else {
+            sb.append(i2 + 1);
+        }
+        if (i3 > 0) {
+            int length = sb.length();
+            if (i2 < 0) {
+                sb.append(2000000000 - i3);
+            } else {
+                sb.append(i3 + 1000000000);
+            }
+            while (sb.charAt(sb.length() - 1) == '0') {
+                sb.setLength(sb.length() - 1);
+            }
+            sb.setCharAt(length, '.');
+        }
+        sb.append('S');
+        return sb.toString();
+    }
+}

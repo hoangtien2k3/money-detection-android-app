@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <capability android:name="actions.intent.OPEN_APP_FEATURE">
+        <intent android:targetPackage="com.martindoudera.cashreader" android:targetClass="com.martindoudera.cashreader.recognition.MainActivity">
+            <parameter android:name="feature" android:key="featureParam" />
+        </intent>
+        <intent android:targetPackage="com.martindoudera.cashreader" android:targetClass="com.martindoudera.cashreader.recognition.MainActivity">
+            <parameter android:name="nothing" android:key="featureParam" />
+        </intent>
+    </capability>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_bulk" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_aed" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_afn" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_all" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_ars" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_aud" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_awg" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_bam" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_bgn" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_bhd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_bif" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_bob" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_brl" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_btn" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_byn" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_cad" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_cdf" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_chf" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_clp" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_cny" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_cop" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_crc" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_czk" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_dkk" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_dop" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_dzd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_egp" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_etb" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_eur" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_gbp" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_gel" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_ghs" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_gtq" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_hkd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_hnl" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_hrk" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_htg" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_huf" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_idr" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_iep" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_ils" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_inr" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_iqd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_irr" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_isk" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_jmd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_jod" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_jpy" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_kes" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_khr" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_kmf" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_krw" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_kwd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_kzt" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_lbp" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_lkr" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_lrd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_mad" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_mdl" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_mkd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_mnt" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_mur" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_mxn" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_myr" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_ngn" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_nio" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_nok" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_npr" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_nzd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_omr" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_pen" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_php" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_pkr" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_pln" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_prb" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_pyg" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_qar" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_ron" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_rsd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_rub" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_rwf" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_sar" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_scp" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_sdg" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_sek" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_sgd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_ssp" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_syp" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_thb" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_tnd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_try" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_ttd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_twd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_tzs" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_uah" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_ugx" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_usd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_uyu" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_uzs" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_ves" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_vnd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_xaf" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_xcd" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_xof" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_yer" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_zar" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+    <shortcut>
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding android:value="@array/shortcut_zmw" android:key="feature" />
+        </capability-binding>
+    </shortcut>
+</shortcuts>
