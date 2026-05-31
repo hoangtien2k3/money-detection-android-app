@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference android:icon="@drawable/currency_convert" android:title="@string/conversion_switch_title" android:key="@string/pref_key_conversion_enabled" android:defaultValue="true" />
-    <Preference android:icon="@drawable/cash_multiple" android:persistent="false" android:title="@string/conversion_select_currency" android:key="@string/pref_key_conversion_select_currency">
-        <intent android:targetPackage="com.martindoudera.cashreader" android:action="android.intent.action.VIEW" android:targetClass="com.martindoudera.cashreader.setting.conversion.ChooseConversionCurrencyActivity" />
-    </Preference>
-</PreferenceScreen>
